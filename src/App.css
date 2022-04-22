@@ -1,6 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+select {
+  width:100%;
+  height:56px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'PT Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+}
+
+.App-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-wrapper section{
+  /* width:456px; */
+
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -14,14 +50,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
@@ -35,4 +71,210 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1{
+  margin:0;
+}
+.small {
+  font-size: 15px;
+  font-weight: 400;
+line-height: 15px;
+}
+
+.topTitle {
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 100%;
+color: black;
+max-width: 350px ;
+padding: 30px;
+
+}
+
+.topTitleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 100%;
+  height: 80px;
+  
+font-family: 'PT Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 25px;
+display: flex;
+align-items: center;
+text-align: center;
+border-radius: 0.7rem;
+border: 1px solid rgba(0, 0, 0, 0.544);
+
+}
+
+
+
+
+.ButtonHome{
+  background-color: white;
+  margin-top: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.cards {
+  display: grid;
+  grid-auto-rows: 2.5rem;
+  margin-top:2rem;
+  width:100%;
+  
+}
+.mainCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.card {
+
+  border-radius: .6rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
+  width:100%;
+  height:300px;
+}
+
+.card h3 {
+  font-family: 'PT Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 40px;
+letter-spacing: 0.03em;
+width: 100%;
+margin:10px;
+
+margin-right: 40px;
+}
+
+.card h2 {
+
+  font-family: 'PT Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 5px;
+margin:0;
+
+}
+.card p {
+  
+  font-size: 16px;
+  font-family: 'PT Mono';
+  
+
+}
+
+.card .credentials-1 {
+  text-align: left;
+  margin: 20px;
+  width:100%;
+}
+.card .credentials-2 {
+  text-align: right;
+  margin: 20px;
+  width:40%;
+}
+.card .credentials-2 p {
+  width:100%;
+
+}
+
+.card:nth-child(1) {
+   background-color: #FFAE34;
+}
+
+.card:nth-child(2) {
+   background-color: #222222;
+}
+
+.card:nth-child(3) {
+   background-color: #8B58F9;
+}
+
+.card:nth-child(4) {
+   background-color: #F33355;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.credentials-1{
+ width:100%;
+ margin-right:20px;
+}
+.credentials-2{
+  width:100%;
+  margin-left:20px;
+ }
+.AddNewCardConfirm {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+input {
+  width:100%;
+  height:56px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'PT Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+}
+
+.credentials input {
+  width:100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  text-align: left;
+}
+
+.chip {
+  display: flex;
+  justify-content: space-between;
+  padding:2rem;
+
+}
+.deletebutton{
+  width:150px;
+  height:30px;
+  background-color: red;
+  font-size: 12px;
+}
+
+.clearLCbutton {
+  background-color: yellow;
 }
