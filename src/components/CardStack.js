@@ -2,10 +2,9 @@ import React from 'react'
 import Card from './Card'
 
 export default function CardStack(props) {
-
-  const allCards= props.allCards
+  const {addCard, allCards} = props
   const list = allCards.slice(1)
-  const addCard=props.addCard
+  
   
 
   function makeFirst(index) {
@@ -19,7 +18,7 @@ export default function CardStack(props) {
   const cardItems = list.map((card, index)=>{
 
     return( <article onClick={() => makeFirst(index)} className="card">
-     <Card  topCard={card} key={index+100} />
+     <Card  topCard={card} key={allCards[index].cardnumber} />
     </article>)})
 
 

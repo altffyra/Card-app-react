@@ -7,11 +7,14 @@ import AddCard from './views/AddCard';
 
 function App() {
   const LOCAL_STORAGE_KEY ='cardsSave.cards'
+  
   const [newCard, addNewCard] = useState([
-    {key:'', bank:'', cardnumber:'XXXX XXXX XXXX XXXX', cardholder:'FIRSTNAME LASTNAME',valid:'MM/YY', color:"#D0D0D0"}])
+    {key:'99', bank:'', cardnumber:'XXXX XXXX XXXX XXXX', cardholder:'FIRSTNAME LASTNAME',valid:'MM/YY', color:"#D0D0D0"}])
   const [allCards, addCard] = useState([
-     { bank:"ninja", cardnumber:'6454 7453 5432 2323', cardholder:'CHRISTIAN JOHNSSON', valid:'12/24', color:"#222222", textcolor:"#FFFFFF"  }]) 
+     {key:'0', bank:"ninja", cardnumber:'6454 7453 5432 2323', cardholder:'CHRISTIAN JOHNSSON', valid:'12/24', color:"#222222", textcolor:"#FFFFFF"  }]) 
 
+
+     
   useEffect(() => {const timer = setTimeout(() => {
     const storedCards = JSON.parse(localStorage.getItem
       (LOCAL_STORAGE_KEY))
